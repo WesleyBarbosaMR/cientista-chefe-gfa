@@ -1,9 +1,11 @@
+/* Reset Básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo Geral */
 body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -13,19 +15,25 @@ body {
 header {
     background: #f4f4f4;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    width: 100%;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     list-style: none;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+    background-color: #ccc;
 }
 
 nav ul li {
@@ -40,21 +48,116 @@ nav ul li a {
 
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-main section {
-    margin-bottom: 40px;
+.resumo-projeto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.resumo {
+    width: 60%;
+}
+
+.vinculo {
+    width: 30%;
+    text-align: right;
+}
+
+.sobre-midias {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre,
+.midias {
+    width: 48%;
+}
+
+.sobre ul {
+    list-style: none;
+}
+
+.midias-conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto-video {
+    width: 60%;
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo {
+    width: 35%;
+}
+
+.participantes-grid,
+.produtos-grid,
+.publicacoes-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.participante,
+.produto,
+.publicacao {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    width: calc(25% - 20px);
+}
+
+.ver-todos {
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background: #ccc;
+    padding: 20px;
 }
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.rodape-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape-publicacoes,
+.rodape-links,
+.rodape-contato {
+    width: 30%;
+}
+
+.rodape-publicacoes ul,
+.rodape-links ul {
+    list-style: none;
+}
+
+.rodape-contato .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
 
 .slideshow {
     margin: 40px 0;
