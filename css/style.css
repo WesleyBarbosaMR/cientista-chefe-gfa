@@ -16,14 +16,46 @@ header {
     background: #f4f4f4;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    justify-content: space-between;
     align-items: center;
+    
 }
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: #e64c4c;
+    padding: 20px;
+}
+
+
+h1 {
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+
+h2 {
+    font-weight: 700;
+    font-size: x-large;
+}
+
+
+h3 {
+    font-weight: 700;
+    font-size: larger;
+}
+
+
+
+
 
 .logo-container {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 30%;
+    height: 80px;
 }
 
 nav ul {
@@ -53,10 +85,26 @@ main {
     gap: 40px;
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.swiper-slide {
+    height: 600px;
+    height: 300px;
+    background-color: #333;
+    color: white;
+}
+
+
 .resumo-projeto {
+    background-color: #ccc;
+    
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    height: 300px;
 }
 
 .resumo {
@@ -124,10 +172,6 @@ main {
     font-weight: bold;
 }
 
-footer {
-    background: #ccc;
-    padding: 20px;
-}
 
 .logos {
     display: flex;
