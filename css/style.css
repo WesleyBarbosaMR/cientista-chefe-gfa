@@ -12,6 +12,13 @@ body {
     line-height: 1.6;
 }
 
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 header {
     background: #f4f4f4;
     padding: 20px;
@@ -49,13 +56,59 @@ h3 {
 
 
 
+ul > details {
+    font-size: large;
+    border-bottom-style: solid;
+    border-color: #333;
+    border-width: 1px;
+    padding: 5px 0px 5px 5px;
+    margin-top: 5px;
+}
 
 
-.logo-container {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    height: 80px;
+summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+summary::after {
+  content: '';
+  width: 18px;
+  height: 10px;
+  background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
+  background-size: cover;
+  transition: 0.2s;
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  color: #30353b;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+details > p {
+    padding-left: 10px;
+}
+
+details[open] summary {border-radius: 5px 5px 0 0;}
+
+details {
+  /* background-color: gray; */
+  /* background-image: linear-gradient(45deg, #e792e7 0%, #6eb7f1 100%); */
+  border-radius: 5px;
 }
 
 nav ul {
@@ -78,29 +131,18 @@ nav ul li a {
     font-weight: bold;
 }
 
-main {
-    padding: 20px;
+
+
+.logo-container {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    justify-content: space-around;
+    width: 30%;
+    height: 80px;
 }
-
-.swiper {
-  width: 600px;
-  height: 300px;
-}
-
-.swiper-slide {
-    height: 600px;
-    height: 300px;
-    background-color: #333;
-    color: white;
-}
-
 
 .resumo-projeto {
     background-color: #ccc;
-    
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -207,13 +249,14 @@ main {
     margin: 40px 0;
 }
 
-.swiper-container {
-    width: 100%;
-    height: 300px;
+.swiper {
+  width: 600px;
+  height: 300px;
 }
 
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.swiper-slide {
+    height: 600px;
+    height: 300px;
+    background-color: #333;
+    color: white;
 }
