@@ -29,6 +29,11 @@ header {
     
 }
 
+
+img {
+    height: 100%;
+}
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -136,7 +141,7 @@ nav ul li a {
 .logo-container {
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 40%;
     height: 80px;
 }
 
