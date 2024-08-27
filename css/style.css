@@ -30,7 +30,7 @@ header {
 }
 
 
-img {
+a > img {
     height: 100%;
 }
 
@@ -168,9 +168,17 @@ nav ul li a {
     justify-content: space-between;
 }
 
-.sobre,
+.sobre {
+    width: 95%;
+}
+
 .midias {
     width: 48%;
+}
+
+.midias {
+    height: 85%;
+    
 }
 
 .sobre ul {
@@ -180,7 +188,8 @@ nav ul li a {
 .midias-conteudo {
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    padding-left: 10px;
+    /* justify-content: space-around; */
 }
 
 .foto-video {
@@ -190,6 +199,7 @@ nav ul li a {
     text-align: center;
     justify-content: center;
     padding: 20px;
+    margin-right: 10px;
 }
 
 .foto-video > p{
@@ -198,7 +208,7 @@ nav ul li a {
 }
 
 .titulo {
-    width: 35%;
+    width: 25%;
 }
 
 .participantes-grid,
@@ -223,22 +233,27 @@ nav ul li a {
 
 .participante {
     display: flex;
+    justify-content: space-between;
     width: 30rem;
     height: 20rem;
+    border-radius: 10px;
 }
 
 
 
 .part-perfil {
     background-color: #ffffff;
-    width: 13rem;
+    width: 11.5rem;
     text-align: left;
 }
 
 .part-perfil > img {
     
     width: 10rem;
+    height: 11rem;
     border: 1px solid #30353b;
+    object-fit: cover;
+    object-position: 75% 0;
     
 }
 
@@ -254,7 +269,7 @@ nav ul li a {
     padding: 8px;
     justify-content: space-between;
     background-color: #c7c7c7;
-    width: 15rem;
+    width: 16rem;
 
 }
 
