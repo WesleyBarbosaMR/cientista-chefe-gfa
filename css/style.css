@@ -24,7 +24,7 @@ header {
     padding: 20px;
     display: flex;
     /* flex-direction: column; */
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
 }
@@ -69,6 +69,12 @@ ul > details {
     padding: 5px 0px 5px 5px;
     margin-top: 5px;
 }
+
+details > p{
+    text-align: justify;
+    hyphens: auto;
+}
+
 
 
 summary {
@@ -141,8 +147,8 @@ nav ul li a {
 .logo-container {
     display: flex;
     justify-content: space-around;
-    width: 40%;
-    height: 80px;
+    width: 30%;
+    height: 50px;
 }
 
 .resumo-projeto {
@@ -151,7 +157,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height: 300px;
+    height: 350px;
 }
 
 .resumo {
