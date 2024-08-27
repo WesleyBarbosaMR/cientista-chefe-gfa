@@ -221,7 +221,7 @@ nav ul li a {
 .produtos-grid,
 .publicacoes-grid {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
@@ -246,6 +246,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: space-between;
     height: 16rem;
+    width: 20rem;
 }
 
 .produto > svg {
