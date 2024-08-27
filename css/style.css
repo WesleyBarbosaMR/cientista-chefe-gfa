@@ -5,11 +5,33 @@
     box-sizing: border-box;
 }
 
+/* Color Theme Swatches in Hex */
+.Cientista-Chefe-GFA-Pallete-1-hex { color: #FFC0A9; }
+.Cientista-Chefe-GFA-Pallete-2-hex { color: #7F9C0C; }
+.Cientista-Chefe-GFA-Pallete-3-hex { color: #7F6A0D; }
+.Cientista-Chefe-GFA-Pallete-4-hex { color: #FCB603; }
+.Cientista-Chefe-GFA-Pallete-5-hex { color: #FF985C; }
+
+/* Color Theme Swatches in RGBA */
+.Cientista-Chefe-GFA-Pallete-1-rgba { color: rgba(255, 192, 169, 1); }
+.Cientista-Chefe-GFA-Pallete-2-rgba { color: rgba(127, 156, 12, 1); }
+.Cientista-Chefe-GFA-Pallete-3-rgba { color: rgba(127, 106, 13, 1); }
+.Cientista-Chefe-GFA-Pallete-4-rgba { color: rgba(252, 182, 3, 1); }
+.Cientista-Chefe-GFA-Pallete-5-rgba { color: rgba(255, 152, 92, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Cientista-Chefe-GFA-Pallete-1-hsla { color: hsla(16, 100, 83, 1); }
+.Cientista-Chefe-GFA-Pallete-2-hsla { color: hsla(72, 85, 32, 1); }
+.Cientista-Chefe-GFA-Pallete-3-hsla { color: hsla(48, 81, 27, 1); }
+.Cientista-Chefe-GFA-Pallete-4-hsla { color: hsla(43, 97, 50, 1); }
+.Cientista-Chefe-GFA-Pallete-5-hsla { color: hsla(22, 100, 68, 1);}
+
 /* Estilo Geral */
 body {
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
+    background-color: #e0de90;
 }
 
 main {
@@ -20,7 +42,7 @@ main {
 }
 
 header {
-    background: #f4f4f4;
+    background: #FCB603;
     padding: 20px;
     display: flex;
     /* flex-direction: column; */
@@ -42,7 +64,8 @@ a {
 footer {
     display: flex;
     justify-content: space-around;
-    background: #e64c4c;
+    color:#374505;
+    background: #FF985C;
     padding: 20px;
 }
 
@@ -134,7 +157,8 @@ nav ul {
     width: 100%;
     margin-top: 10px;
     padding: 10px 0;
-    background-color: #ccc;
+    background-color: #FCB603;
+    border: 2px solid #FF985C;
 }
 
 nav ul li {
@@ -157,12 +181,13 @@ nav ul li a {
 }
 
 .resumo-projeto {
-    background-color: #ccc;
+    background-color: #7F6A0D;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     height: 350px;
+    color: #f4f4f4;
 }
 
 .resumo {
@@ -206,6 +231,7 @@ nav ul li a {
 .foto-video {
     width: 60%;
     display: flex;
+    color: #30353b;
     background-color: #eee;
     text-align: center;
     justify-content: center;
@@ -379,5 +405,5 @@ nav ul li a {
     justify-content: center;
     height: 600px;
     height: 300px;
-    background-color: #d4d4d4;
+    background-color: #e0de90;
 }
