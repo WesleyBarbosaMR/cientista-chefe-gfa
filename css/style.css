@@ -232,8 +232,36 @@ nav ul li a {
     padding: 20px;
     text-align: center;
     width: calc(25% - 20px);
+}
 
 
+.produtos-grid {
+    
+    justify-content: center;
+
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 16rem;
+}
+
+.produto > svg {
+    /* height: 50%; */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.produto > p {
+    margin-bottom: auto;
+    margin-top: 3rem;
+    font-size: small;
+    text-align: justify;
+    line-height: normal;
+    hyphens: auto;
 }
 
 
