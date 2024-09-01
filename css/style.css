@@ -43,11 +43,11 @@ main {
 
 header {
     background: #FCB603;
-    padding: 20px;
-    display: flex;
+    /* padding: 20px; */
+    /* display: flex; */
     /* flex-direction: column; */
-    justify-content: space-around;
-    align-items: center;
+    /* justify-content: space-around; */
+    /* align-items: center; */
     
 }
 
@@ -150,6 +150,7 @@ details {
   border-radius: 5px;
 }
 
+/* 
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -169,7 +170,7 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-}
+} */
 
 
 
@@ -177,7 +178,7 @@ nav ul li a {
     display: flex;
     justify-content: space-around;
     width: 20%;
-    height: 50px;
+    
 }
 
 .resumo-projeto {

@@ -40,35 +40,51 @@
 
   <body>
     <header>
-      <div class="logo-container">
-        <a href="https://www.ufc.br/">
-          <img src="assets/img/logos/ufc_logo.png" alt="Logo UFC" />
-        </a>
-        <a href="https://www.idace.ce.gov.br/">
-          <img src="assets/img/logos/Idace.png" alt="Logo IDACE" />
-        </a>
-        <a href="https://www.funcap.ce.gov.br/">
-          <img src="assets/img/logos/funcap.png" alt="Logo FUNCAP" />
-        </a>
-        <a
-          href="https://www.funcap.ce.gov.br/programas-de-auxilio/cientista-chefe-geral/"
+      <nav class="navbar border-bottom navbar-expand-xl justify-content-between container">
+
+        <div class="navbar-brand logo-container  col-12 col-sm-9 col-xl-4">
+
+          <a href="https://www.ufc.br/">
+            <img src="assets/img/logos/ufc_logo.png" alt="Logo UFC" />
+          </a>
+          <a href="https://www.idace.ce.gov.br/">
+            <img src="assets/img/logos/Idace.png" alt="Logo IDACE" />
+          </a>
+          <a href="https://www.funcap.ce.gov.br/">
+            <img src="assets/img/logos/funcap.png" alt="Logo FUNCAP" />
+          </a>
+          <a
+            href="https://www.funcap.ce.gov.br/programas-de-auxilio/cientista-chefe-geral/"
+          >
+            <img
+              src="assets/img/logos/Logomarca-Cientista-Chefe.png"
+              alt="Logo Cientista Chefe"
+            />
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <img
-            src="assets/img/logos/Logomarca-Cientista-Chefe.png"
-            alt="Logo Cientista Chefe"
-          />
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pages/sobre.html">Sobre o Projeto</a></li>
-          <li><a href="pages/participantes.html">Participantes</a></li>
-          <li><a href="pages/produtos.html">Produtos</a></li>
-          <li><a href="pages/memoria.html">Memória Multimídia</a></li>
-          <li><a href="pages/publicacoes.html">Publicações</a></li>
-          <li><a href="pages/contato.html">Contato</a></li>
-        </ul>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-lg-5" id="navbarNav">
+          <div class="container navbar-nav flex-grow-1 justify-content-end ">
+            <!-- Aqui poderia vim um css para os botões -->
+            <a class="btn" href="index.html">Home</a>
+            <a class="btn" href="pages/sobre.html">Sobre o Projeto</a>
+            <a class="btn" href="pages/participantes.html">Participantes</a>
+            <a class="btn" href="pages/produtos.html">Produtos</a>
+            <a class="btn" href="pages/memoria.html">Memória Multimídia</a>
+            <a class="btn" href="pages/publicacoes.html">Publicações</a>
+            <a class="btn" href="pages/contato.html">Contato</a>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -461,7 +477,7 @@
     </main>
 
     <footer>
-      <div class="logo-container">
+      <!-- <div class="logo-container">
         <img src="assets/img/logos/ufc_logo.png" alt="Logo UFC" />
         <img src="assets/img/logos/Idace.png" alt="Logo IDACE" />
         <img src="assets/img/logos/funcap.png" alt="Logo FUNCAP" />
@@ -473,7 +489,7 @@
             alt="Logo Cientista Chefe"
           />
         </a>
-      </div>
+      </div> -->
       <div class="rodape-info">
         <div class="rodape-publicacoes">
           <h3>Publicações</h3>
