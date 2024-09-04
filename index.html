@@ -36,14 +36,19 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <style>
+      summary {
+        display: flex;
+      }
+    </style>
   </head>
 
   <body>
     <header>
-      <nav class="navbar border-bottom navbar-expand-xl justify-content-between container">
-
-        <div class="navbar-brand logo-container  col-12 col-sm-9 col-xl-4">
-
+      <nav
+        class="navbar border-bottom navbar-expand-xl justify-content-between container"
+      >
+        <div class="navbar-brand logo-container col-12 col-sm-9 col-xl-4">
           <a href="https://www.ufc.br/">
             <img src="assets/img/logos/ufc_logo.png" alt="Logo UFC" />
           </a>
@@ -74,15 +79,13 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse col-lg-5" id="navbarNav">
-          <div class="container navbar-nav flex-grow-1 justify-content-end ">
+          <div class="container navbar-nav flex-grow-1 justify-content-end">
             <!-- Aqui poderia vim um css para os botões -->
             <a class="btn" href="index.html">Home</a>
             <a class="btn" href="pages/sobre.html">Sobre o Projeto</a>
             <a class="btn" href="pages/participantes.html">Participantes</a>
-            <a class="btn" href="pages/produtos.html">Produtos</a>
-            <a class="btn" href="pages/memoria.html">Memória Multimídia</a>
-            <a class="btn" href="pages/publicacoes.html">Publicações</a>
-            <a class="btn" href="pages/contato.html">Contato</a>
+
+            <a class="btn" href="#rodape-contato">Contato</a>
           </div>
         </div>
       </nav>
@@ -93,7 +96,7 @@
         <div class="resumo">
           <h1>Governança Fundiária e Ambiental do Ceará</h1>
         </div>
-        <div class="midias">
+        <!-- <div class="midias">
           <h2>Mídias</h2>
           <div class="midias-conteudo">
             <div class="foto-video">
@@ -109,8 +112,48 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
+
+      <div class="sobre">
+        <h2>Sobre</h2>
+        <ul>
+          <details open>
+            <summary>Resumo</summary>
+            <p>
+              Esta proposta se desenvolve a partir de uma parceria entre o
+              Instituto de Desenvolvimento Agrário - IDACE e um conjunto de
+              docentes/pesquisadores das Instituições de Ensino Superior - IES
+              do Ceará e seus programas de pós-graduação. O objetivo geral deste
+              projeto é apoiar a Política Estadual de Regularização Fundiária
+              Rural. O tema da governança da terra está diretamente associado ao
+              lançamento das Diretrizes Voluntárias sobre a Governança
+              Responsável da Terra, dos Recursos Pesqueiros e Florestais no
+              contexto de Segurança Alimentar Nacional pela Organização das
+              Nações Unidas para a Alimentação e Agricultura - FAO em 2012. Tais
+              diretrizes têm o propósito de orientar os Estados nacionais a
+              elaborar programas, leis e políticas que compreendam a segurança
+              alimentar, o direito de posse e o acesso equitativo da terra, da
+              pesca e das florestas como elementos fundamentais na erradicação
+              da fome e da pobreza, fomentando o desenvolvimento sustentável.
+              Nesta proposta interdisciplinar estão sendo consideradas
+              articulações relativas às políticas que envolvem natureza e
+              sociedade, propõe-se uma inovação pública atenta aos desafios
+              sócio ambientais do presente e do futuro, ancoradas nas modernas
+              possibilidades de ordenamento territorial. Destacam-se os estudos
+              sobre governança fundiária e ambiental, considerando-se os
+              desafios do presente na crise climática, estudos sobre as novas
+              configurações no interior dos assentamentos de reforma agrária do
+              estado e a proposta de fortalecimento institucional através da
+              disponibilização da malha fundiária em formato digital interativo,
+              possibilitando fortalecimento de rede de pesquisa e criação de
+              ferramentas instrumentais para garantia de direitos, especialmente
+              de comunidades tradicionais.
+            </p>
+          </details>
+        </ul>
+      </div>
+      <a href="pages/sobre.html" class="ver-todos">Saiba Mais</a>
 
       <!-- Seção de Produtos -->
       <div style="display: flex; justify-content: space-around">
@@ -174,12 +217,12 @@
                 fundiários do Ceará, incluindo o projeto de software com formato
                 simplificado e interativo
                 <a href="#">Link para repositório</a>
-              </p>
+              </p> 
             </div>
           </div>
         </section>
         <div class="participantes">
-          <h2>Participantes</h2>
+          <h2>Coordenadoras</h2>
           <div class="participantes-grid">
             <div class="swiper">
               <!-- Additional required wrapper -->
@@ -306,59 +349,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div style="display: flex; justify-content: center">
-                    <div class="participante">
-                      <div class="part-perfil">
-                        <p>Professore Pesquisador</p>
-                        <img
-                          src="assets/img/placeholders/ww.gif.crdownload"
-                          alt="foto de perfil placeholder"
-                        />
-                        <p>Prof. Wellington Sarmento</p>
-                        <a href="http://lattes.cnpq.br/1015561507843037"
-                          >Lattes</a
-                        >
-                      </div>
-                      <div class="part-resumo">
-                        <p>
-                          Mestre em Engenharia de Teleinformática pela UFC e
-                          graduado em Telemática pelo Centro Federal de Ensino
-                          Tecnológico do Ceará.
-                        </p>
-                        <p>
-                          <strong>
-                            Especialista em Machine Learning e Projetista de
-                            software
-                          </strong>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div style="display: flex; justify-content: center">
-                    <div class="participante">
-                      <div class="part-perfil">
-                        <p>Bolsista Voluntário</p>
-                        <img
-                          src="assets/img/placeholders/perfil_placeholder.png"
-                          alt="foto de perfil placeholder"
-                        />
-                        <p>Nome</p>
-                        <a href="http://lattes.cnpq.br/1015561507843037"
-                          >Lattes</a
-                        >
-                      </div>
-                      <div class="part-resumo">
-                        <p>Descrição</p>
-                        <p>
-                          <strong> função </strong>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
 
               <!-- If we need navigation buttons -->
@@ -371,155 +361,27 @@
       </div>
 
       <!-- Seção Sobre e Mídias -->
-      <section class="sobre-midias">
-        <div class="sobre">
-          <h2>Sobre</h2>
-          <ul>
-            <details open>
-              <summary>Resumo</summary>
-              <p>
-                Esta proposta se desenvolve a partir de uma parceria entre o
-                Instituto de Desenvolvimento Agrário - IDACE e um conjunto de
-                docentes/pesquisadores das Instituições de Ensino Superior - IES
-                do Ceará e seus programas de pós-graduação. O objetivo geral
-                deste projeto é apoiar a Política Estadual de Regularização
-                Fundiária Rural. O tema da governança da terra está diretamente
-                associado ao lançamento das Diretrizes Voluntárias sobre a
-                Governança Responsável da Terra, dos Recursos Pesqueiros e
-                Florestais no contexto de Segurança Alimentar Nacional pela
-                Organização das Nações Unidas para a Alimentação e Agricultura -
-                FAO em 2012. Tais diretrizes têm o propósito de orientar os
-                Estados nacionais a elaborar programas, leis e políticas que
-                compreendam a segurança alimentar, o direito de posse e o acesso
-                equitativo da terra, da pesca e das florestas como elementos
-                fundamentais na erradicação da fome e da pobreza, fomentando o
-                desenvolvimento sustentável. Nesta proposta interdisciplinar
-                estão sendo consideradas articulações relativas às políticas que
-                envolvem natureza e sociedade, propõe-se uma inovação pública
-                atenta aos desafios sócio ambientais do presente e do futuro,
-                ancoradas nas modernas possibilidades de ordenamento
-                territorial. Destacam-se os estudos sobre governança fundiária e
-                ambiental, considerando-se os desafios do presente na crise
-                climática, estudos sobre as novas configurações no interior dos
-                assentamentos de reforma agrária do estado e a proposta de
-                fortalecimento institucional através da disponibilização da
-                malha fundiária em formato digital interativo, possibilitando
-                fortalecimento de rede de pesquisa e criação de ferramentas
-                instrumentais para garantia de direitos, especialmente de
-                comunidades tradicionais.
-              </p>
-            </details>
-            <details>
-              <summary>Contextualização</summary>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
-                dolorem autem voluptas fuga excepturi? Atque et exercitationem
-                consequatur neque quo amet asperiores, dolores blanditiis,
-                maiores consectetur earum at odio nostrum.
-              </p>
-            </details>
-            <details>
-              <summary>Objetivos e Metas</summary>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
-                dolorem autem voluptas fuga excepturi? Atque et exercitationem
-                consequatur neque quo amet asperiores, dolores blanditiis,
-                maiores consectetur earum at odio nostrum.
-              </p>
-            </details>
-            <details>
-              <summary>Justificativa</summary>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
-                dolorem autem voluptas fuga excepturi? Atque et exercitationem
-                consequatur neque quo amet asperiores, dolores blanditiis,
-                maiores consectetur earum at odio nostrum.
-              </p>
-            </details>
-            <details>
-              <summary>Fundamentação Teórica</summary>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
-                dolorem autem voluptas fuga excepturi? Atque et exercitationem
-                consequatur neque quo amet asperiores, dolores blanditiis,
-                maiores consectetur earum at odio nostrum.
-              </p>
-            </details>
-            <details>
-              <summary>Referências Bibliográficas</summary>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
-                dolorem autem voluptas fuga excepturi? Atque et exercitationem
-                consequatur neque quo amet asperiores, dolores blanditiis,
-                maiores consectetur earum at odio nostrum.
-              </p>
-            </details>
-          </ul>
-        </div>
-        <a href="pages/sobre.html" class="ver-todos">Saiba Mais</a>
-      </section>
-
-      <!-- Seção de Participantes -->
-
-      <!-- Seção de Publicações -->
-      <section class="publicacoes">
-        <h2>Publicações</h2>
-        <div class="publicacoes-grid">
-          <div class="publicacao">Teses</div>
-          <div class="publicacao">Dissertações</div>
-          <div class="publicacao">Monografias</div>
-          <div class="publicacao">Artigos em Eventos</div>
-          <div class="publicacao">Artigos em Jornal</div>
-          <div class="publicacao">Relatórios Técnicos</div>
-          <div class="publicacao">Ensaios</div>
-        </div>
-      </section>
+      <section class="sobre-midias"></section>
     </main>
 
     <footer>
-      <!-- <div class="logo-container">
-        <img src="assets/img/logos/ufc_logo.png" alt="Logo UFC" />
-        <img src="assets/img/logos/Idace.png" alt="Logo IDACE" />
-        <img src="assets/img/logos/funcap.png" alt="Logo FUNCAP" />
-        <a
-          href="https://www.funcap.ce.gov.br/programas-de-auxilio/cientista-chefe-geral/"
-        >
-          <img
-            src="assets/img/logos/Logomarca-Cientista-Chefe.png"
-            alt="Logo Cientista Chefe"
-          />
-        </a>
-      </div> -->
+
       <div class="rodape-info">
-        <div class="rodape-publicacoes">
-          <h3>Publicações</h3>
-          <ul>
-            <li>Teses</li>
-            <li>Dissertações</li>
-            <li>Monografias</li>
-            <li>Artigos em Eventos</li>
-            <li>Artigos em Jornal</li>
-            <li>Relatórios Técnicos</li>
-            <li>Ensaios</li>
-          </ul>
-        </div>
         <div class="rodape-links">
-          <h3>Sitemap</h3>
+          <h3>Projeto</h3>
           <ul>
-            <li><a href="pages/sobre.html">Sobre o Projeto</a></li>
+            <li><a href="pages/sobre.html">Sobre</a></li>
             <li><a href="pages/participantes.html">Participantes</a></li>
-            <li><a href="pages/produtos.html">Produtos</a></li>
-            <li><a href="pages/memoria.html">Memória Multimídia</a></li>
           </ul>
         </div>
-        <div class="rodape-contato">
+        <div class="rodape-contato" id="rodape-contato">
           <h3>Contato</h3>
           <p>
             E-mail:
             <a href="mailto:cientistachefe.gfa@ufc.br"
               >cientistachefe.gfa@ufc.br</a
             >
-          </p>
+          </p>  
           <p>
             Instagram:
             <a href="https://www.instagram.com/cientistachefe.gfa">
@@ -537,9 +399,9 @@
 
     <!-- Adiciona o JS do Swiper antes do fechamento do body -->
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
