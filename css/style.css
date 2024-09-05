@@ -150,7 +150,7 @@ details {
     
 }
 
-.resumo-projeto {
+.banner {
     background-color: #7F6A0D;
     padding: 10px;
     display: flex;
@@ -167,27 +167,20 @@ details {
 }
 
 
-.participantes-grid,
-.produtos-grid,
-.publicacoes-grid {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.participante,
-.produto,
-.publicacao {
+.produto
+ {
     background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
+    /* padding: 20px; */
+    /* text-align: center; */
     width: calc(25% - 20px);
 }
 
 
 .produtos-grid {
+    gap: 40px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 
@@ -218,7 +211,6 @@ details {
 
 .participante {
     display: flex;
-    justify-content: space-between;
     width: 30rem;
     height: 20rem;
     border-radius: 10px;
@@ -228,10 +220,10 @@ details {
     background-color: #ffffff;
     width: 11.5rem;
     text-align: left;
+    padding: 5px;
 }
 
 .part-perfil > img {
-    
     width: 10rem;
     height: 11rem;
     border: 1px solid #30353b;
@@ -273,20 +265,11 @@ details {
     font-weight: bold;
 }
 
-
-
 .rodape-info {
     display: flex;
     justify-content: space-between;
 }
 
-.rodape-publicacoes,
-.rodape-links,
-.rodape-contato {
-    width: 30%;
-}
-
-.rodape-publicacoes ul,
 .rodape-links ul {
     list-style: none;
 }
@@ -294,6 +277,7 @@ details {
 .rodape-contato .social-icons {
     display: flex;
     gap: 10px;
+    align-items: center;
     margin-top: 10px;
 }
 
@@ -308,7 +292,6 @@ details {
 }
 
 .swiper-slide {
-    
     justify-content: center;
     height: 600px;
     height: 300px;
