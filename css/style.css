@@ -52,11 +52,15 @@ a > img {
 
 
 footer {
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     color:#374505;
     background: #FF985C;
-    padding: 20px;
+    padding-top: 20px;
+}
+
+footer > p {
+    margin-bottom: 0px;
 }
 
 
@@ -157,59 +161,11 @@ details {
 }
 
 
-.vinculo {
-    width: 30%;
-    text-align: right;
-}
-
-.sobre-midias {
-    display: flex;
-    justify-content: space-between;
-}
 
 .sobre {
     width: 95%;
 }
 
-.midias {
-    width: 48%;
-}
-
-.midias {
-    height: 85%;
-    
-}
-
-.sobre ul {
-    list-style: none;
-}
-
-.midias-conteudo {
-    height: 100%;
-    display: flex;
-    padding-left: 10px;
-    /* justify-content: space-around; */
-}
-
-.foto-video {
-    width: 60%;
-    display: flex;
-    color: #30353b;
-    background-color: #eee;
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-    margin-right: 10px;
-}
-
-.foto-video > p{
-    font-size: xx-large;
-    margin: auto;
-}
-
-.titulo {
-    width: 25%;
-}
 
 .participantes-grid,
 .produtos-grid,
@@ -268,8 +224,6 @@ details {
     border-radius: 10px;
 }
 
-
-
 .part-perfil {
     background-color: #ffffff;
     width: 11.5rem;
@@ -303,16 +257,12 @@ details {
 
 }
 
-
-
 .part-resumo > p {
     font-size: smaller;
     text-align: justify;
     hyphens: auto;
     line-height: normal;
 }
-
-
 
 .ver-todos {
     display: block;
@@ -324,12 +274,6 @@ details {
 }
 
 
-.logos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-}
 
 .rodape-info {
     display: flex;
