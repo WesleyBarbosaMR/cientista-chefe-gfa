@@ -45,28 +45,7 @@
 
   <body>
     <header>
-      <nav
-        class="navbar border-bottom navbar-expand-xl justify-content-end container"
-      >
-        <!-- <div class="navbar-brand logo-container col-12 col-sm-9 col-xl-4">
-          <a href="https://www.ufc.br/">
-            <img src="assets/img/logos/ufc_logo.png" alt="Logo UFC" />
-          </a>
-          <a href="https://www.idace.ce.gov.br/">
-            <img src="assets/img/logos/Idace.png" alt="Logo IDACE" />
-          </a>
-          <a href="https://www.funcap.ce.gov.br/">
-            <img src="assets/img/logos/funcap.png" alt="Logo FUNCAP" />
-          </a>
-          <a
-            href="https://www.funcap.ce.gov.br/programas-de-auxilio/cientista-chefe-geral/"
-          >
-            <img
-              src="assets/img/logos/Logomarca-Cientista-Chefe.png"
-              alt="Logo Cientista Chefe"
-            />
-          </a>
-        </div> -->
+      <nav class="navbar navbar-expand-xl justify-content-end container">
         <button
           class="navbar-toggler"
           type="button"
@@ -84,7 +63,6 @@
             <a class="btn" href="index.html">Home</a>
             <a class="btn" href="pages/sobre.html">Sobre o Projeto</a>
             <a class="btn" href="pages/participantes.html">Participantes</a>
-
             <a class="btn" href="#rodape-contato">Contato</a>
           </div>
         </div>
@@ -93,30 +71,11 @@
     <main>
       <!-- Seção de Resumo do Projeto -->
       <section class="resumo-projeto">
-        <div class="resumo">
-          <h1>Governança Fundiária e Ambiental do Ceará</h1>
-        </div>
-        <!-- <div class="midias">
-          <h2>Mídias</h2>
-          <div class="midias-conteudo">
-            <div class="foto-video">
-              <p>Foto/Video</p>
-            </div>
-            <div class="titulo">
-              <h1>Titulo</h1>
-              <h2>Subtitulo</h2>
-              <h3>Envolvidos</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
-                dolorem laboriosam
-              </p>
-            </div>
-          </div>
-        </div> -->
+        <h1>Governança Fundiária e Ambiental do Ceará</h1>
       </section>
 
-      <div class="sobre">
-        <h2>Sobre</h2>
+      <div class="sobre container">
+        <h2>Resumo</h2>
         <ul>
           <details open>
             <summary>Resumo</summary>
@@ -152,11 +111,11 @@
             </p>
           </details>
         </ul>
+        <a href="pages/sobre.html" class="ver-todos">Saiba Mais</a>
       </div>
-      <a href="pages/sobre.html" class="ver-todos">Saiba Mais</a>
 
       <!-- Seção de Produtos -->
-      <div style="display: flex; justify-content: space-around">
+      <div class="container flex flex-wrap justify-content-around mb-5">
         <section class="produtos">
           <h2>Produtos</h2>
           <div class="produtos-grid">
@@ -217,11 +176,11 @@
                 fundiários do Ceará, incluindo o projeto de software com formato
                 simplificado e interativo
                 <a href="#">Link para repositório</a>
-              </p> 
+              </p>
             </div>
           </div>
         </section>
-        <div class="participantes">
+        <div class="participantes mt-5">
           <h2>Coordenadoras</h2>
           <div class="participantes-grid">
             <div class="swiper">
@@ -325,7 +284,7 @@
                       <div class="part-perfil">
                         <p>Pesquisadora</p>
                         <img
-                          src="assets/img/placeholders/christine.gif.crdownload"
+                          src="assets/img/placeholders/christine.gif"
                           alt="foto de perfil placeholder"
                         />
                         <p>Profa. Christine Farias</p>
@@ -360,12 +319,8 @@
         </div>
       </div>
 
-      <!-- Seção Sobre e Mídias -->
-      <section class="sobre-midias"></section>
-
       <div class="navbar-brand col-12 m-5">
-        <div class="col-12 col-lg-4 container logo-container">
-
+        <div class="col-12 col-lg-5 col-xl-4 col-sm-7 container logo-container">
           <a href="https://www.ufc.br/">
             <img src="assets/img/logos/ufc_logo.png" alt="Logo UFC" />
           </a>
@@ -385,12 +340,9 @@
           </a>
         </div>
       </div>
-
-
     </main>
 
-    <footer>
-
+    <footer class="mt-5">
       <div class="rodape-info">
         <div class="rodape-links">
           <h3>Projeto</h3>
@@ -406,7 +358,7 @@
             <a href="mailto:cientistachefe.gfa@ufc.br"
               >cientistachefe.gfa@ufc.br</a
             >
-          </p>  
+          </p>
           <p>
             Instagram:
             <a href="https://www.instagram.com/cientistachefe.gfa">
@@ -414,9 +366,28 @@
             </a>
           </p>
           <div class="social-icons">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+            >
+              <path
+                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              />
             </svg>
           </div>
         </div>

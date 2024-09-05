@@ -1,9 +1,9 @@
 /* Reset Básico */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /* Color Theme Swatches in Hex */
 .Cientista-Chefe-GFA-Pallete-1-hex { color: #FFC0A9; }
@@ -35,7 +35,7 @@ body {
 }
 
 main {
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -47,10 +47,6 @@ header {
 
 
 a > img {
-    height: 100%;
-}
-
-a {
     height: 3rem;
 }
 
@@ -160,9 +156,6 @@ details {
     color: #f4f4f4;
 }
 
-.resumo {
-    width: 60%;
-}
 
 .vinculo {
     width: 30%;
