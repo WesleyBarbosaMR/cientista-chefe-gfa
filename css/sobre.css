@@ -1,0 +1,9 @@
+main > div > p {
+    text-indent: 3em;
+    margin-bottom: 0.25em;
+}
+
+span {
+    display: block;
+    margin-top: 10px;
+}
