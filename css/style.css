@@ -252,8 +252,8 @@ details {
     flex-direction: column;
     text-align: left;
     padding: 8px;
-    justify-content: space-between;
-    background-color: #c7c7c7;
+    justify-content: space-around;
+    background-color: var(--cor-primaria);
     width: 16rem;
 
 }
