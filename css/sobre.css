@@ -1,4 +1,4 @@
-main > div > p {
+main > div > div > p {
     text-indent: 3em;
     margin-bottom: 0.25em;
 }

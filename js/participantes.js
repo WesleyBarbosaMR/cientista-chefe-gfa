@@ -150,7 +150,7 @@ function colocarParticipantes(participantes, parent) {
     <div class="part-resumo">
         <p data-bs-spy="scroll" class="overflow-y-scroll h-50">
             ${p.resumo || 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo odit illum suscipit molestias expedita tempore velit corporis quo. Nihil autem, facere obcaecati excepturi atque quasi praesentium sit ad dolorum eum!'}
-        </p>
+          </p>
         <p>
             <strong>
             ${p.funcao}
