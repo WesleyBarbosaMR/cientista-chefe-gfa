@@ -131,32 +131,27 @@ colocarParticipantes(participantes, membros);
 function colocarParticipantes(participantes, parent) {
   participantes.forEach((p) => {
     let card = document.createElement("div");
-    card.classList.add("participante");
+    card.classList.add("card");
+    card.classList.add("p-3");
 
     card.innerHTML = `
-    <div class="part-perfil">
-        <p>Pesquisador</p>
-        <img
-            src="${p.img}"
-            alt="foto de ${p.nome}"
-        />
-        <p>
-            ${p.nome}
+    
+      <h5 class="fw-bold">${p.atuacao}</h5>
+      <h6 class="fw-light">${p.funcao}</h6>
+      <div class="pb-3 d-flex justify-content-center">
+        <img class=" card" src="${p.img || "../assets/img/placeholders/placeholder_face.jpg"}" alt="foto de ${p.nome}" />
+      </div>
+      <span class='h5 fw-bold' >${p.nome}</span>
+      <a class="link-body-emphasis" href="${p.Lattes}">Lattes</a>
+      <span class="fw-bold">Resumo</span>
+      <div class="part-resumo">
+        <p data-bs-spy="scroll" class="overflow-y-scroll ">
+        ${p.resumo ||
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam facere molestias vero? Molestiae sed amet similique explicabo incidunt ullam, recusandae nulla dolore asperiores beatae. Veniam at fugit placeat deleniti minus."
+        }
         </p>
-        <a href="${p.Lattes}">
-            lattes
-        </a>
-    </div>
-    <div class="part-resumo">
-        <p data-bs-spy="scroll" class="overflow-y-scroll h-50">
-            ${p.resumo || 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo odit illum suscipit molestias expedita tempore velit corporis quo. Nihil autem, facere obcaecati excepturi atque quasi praesentium sit ad dolorum eum!'}
-          </p>
-        <p>
-            <strong>
-            ${p.funcao}
-            </strong>
-        </p>
-    </div>
+      </div>
+    
     `;
 
     parent.appendChild(card);

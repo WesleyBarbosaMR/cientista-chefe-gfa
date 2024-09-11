@@ -36,6 +36,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/participantes.css" />
     <style>
       summary {
         display: flex;
@@ -62,13 +63,13 @@
             <!-- Aqui poderia vim um css para os botões -->
             <a class="btn" href="index.html">Home</a>
             <a class="btn" href="pages/sobre.html">Sobre o Projeto</a>
-            <a class="btn" href="pages/participantes.html">Participantes</a>
+            <!-- <a class="btn" href="pages/participantes.html">Participantes</a> -->
             <a class="btn" href="#rodape-contato">Contato</a>
           </div>
         </div>
       </nav>
     </header>
-    
+
     <main>
       <!-- Banner do Projeto -->
       <div class="banner">
@@ -186,127 +187,30 @@
       </div>
       <div class="participantes container">
         <h2>Coordenadoras</h2>
+        <div class="m-auto" >
 
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div style="display: flex; justify-content: center">
-                <div class="participante">
-                  <div class="part-perfil">
-                    <p>Pesquisadora</p>
-                    <img
-                      src="assets/img/placeholders/Ines_esco.png"
-                      alt="foto de perfil placeholder"
-                    />
-                    <p>Profa. Inês Escobar</p>
-                    <a href="http://lattes.cnpq.br/2359052636977383">lattes</a>
-                  </div>
-                  <div class="part-resumo">
-                    <p>
-                      Graduada em Agronomia pela Universidade Federal de Viçosa,
-                      Mestra em Política Pública e Meio Ambiente pela UnB e
-                      Doutora em Educação pela USP. É professora Adjunta II da
-                      UFC; Membro da Comissão de Direitos Humanos/UFC;
-                      Representante dos docentes do Nordeste na Coordenação
-                      Pedagógica Nacional do PRONERA (INCRA/MDA); Coordenadora
-                      do Curso de Economia Ecológica da UFC e da Empresa Júnior
-                      Eco-Lógica/UFC; Professora colaboradora do Programa de
-                      Desenvolvimento e Meio Ambiente - PRODEMA/UFC.
-                    </p>
-                    <p><strong>Coordenadora Geral da Pesquisa</strong></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div style="display: flex; justify-content: center">
-                <div class="participante">
-                  <div class="part-perfil">
-                    <p>Pesquisadora</p>
-                    <img
-                      src="assets/img/placeholders/kelly.gif"
-                      alt="foto de perfil placeholder"
-                    />
-                    <p>Profa. Kelly Menezes</p>
-                    <a href="http://lattes.cnpq.br/5768872699906558">Lattes</a>
-                  </div>
-                  <div class="part-resumo">
-                    <p>
-                      Doutora em Educação pela UFC; Mestra em Políticas Públicas
-                      e Sociedade pela Uece; Graduada em Serviço Social pela
-                      Uece, em Pedagogia e em Gerontologia.
-                    </p>
-                    <p>
-                      <strong>
-                        Coordenadora dos painéis de Especialistas e análises
-                        qualitativas
-                      </strong>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="swiper-slide">
-              <div style="display: flex; justify-content: center">
-                <div class="participante">
-                  <div class="part-perfil">
-                    <p>Pesquisadora</p>
-                    <img
-                      src="assets/img/placeholders/nazare.gif"
-                      alt="foto de perfil placeholder"
-                    />
-                    <p>Profa. Nazaré Soares</p>
-                    <a href="http://lattes.cnpq.br/3073541276192824">Lattes</a>
-                  </div>
-                  <div class="part-resumo">
-                    <p>
-                      Doutora e Mestra em Administração e Controladoria pela UFC
-                      , Especialista Gestão Pública pela UECE.
-                    </p>
-                    <p>
-                      <strong> Coordenadora de análises quantitativas </strong>
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div class="membros d-flex flex-wrap gap-3 w-100 justify-content-center">
+            <!-- <div class="card p-2">
+            <h5 class="fw-bold">Atuação</h5>
+            <h6 class="fw-light ">Função</h6>
+            <div class="d-flex justify-content-center">
+              <img class=" card" src="assets/img/placeholders/image.png" alt="" />
             </div>
-            <div class="swiper-slide">
-              <div style="display: flex; justify-content: center">
-                <div class="participante">
-                  <div class="part-perfil">
-                    <p>Pesquisadora</p>
-                    <img
-                      src="assets/img/placeholders/christine.gif"
-                      alt="foto de perfil placeholder"
-                    />
-                    <p>Profa. Christine Farias</p>
-                    <a href="http://lattes.cnpq.br/1472233199190560">Lattes</a>
-                  </div>
-                  <div class="part-resumo">
-                    <p>
-                      Cientista Ambiental pela UFPE, Mestra em Desenvolvimento e
-                      Meio Ambiente pela UFC e Doutora em Engª Agrícola pela
-                      UFC.
-                    </p>
-                    <p>
-                      <strong>
-                        Coordenadora de campo e de interface de plataformas de
-                        dados
-                      </strong>
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <span class='h5 fw-bold' >Nome</span>
+            <a class="link-body-emphasis" href="">Lattes</a>
+            <span class="fw-bold">Resumo</span>
+            <div class="part-resumo">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                facere molestias vero? Molestiae sed amet similique explicabo
+                incidunt ullam, recusandae nulla dolore asperiores beatae. Veniam
+                at fugit placeat deleniti minus.
+              </p>
             </div>
-          </div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          </div> -->
         </div>
+      </div>
         <a href="pages/participantes.html" class="ver-todos">Ver todos</a>
       </div>
 
@@ -339,8 +243,9 @@
         <div class="rodape-links col-6">
           <h3>Projeto</h3>
           <ul>
+            <li><a class="btn" href="index.html">Home</a></li>
             <li><a class="btn" href="pages/sobre.html">Sobre</a></li>
-            <li><a class="btn" href="pages/participantes.html">Participantes</a></li>
+            <!-- <li><a class="btn" href="pages/participantes.html">Participantes</a></li> -->
           </ul>
         </div>
         <div class="rodape-contato col-6" id="rodape-contato">
@@ -398,5 +303,6 @@
 
     <!-- Adiciona o JS principal -->
     <script src="js/main.js"></script>
+    <script src="../js/participantes.js"></script>
   </body>
 </html>

@@ -217,53 +217,6 @@ details {
 }
 
 
-.participante {
-    display: flex;
-    justify-content: center;
-    width: 30rem;
-    height: 20rem;
-    border-radius: 10px;
-}
-
-.part-perfil {
-    background-color: #ffffff;
-    width: 11.5rem;
-    text-align: left;
-    padding: 5px;
-}
-
-.part-perfil > img {
-    width: 10rem;
-    height: 11rem;
-    border: 1px solid #30353b;
-    object-fit: cover;
-    object-position: 75% 0;
-    
-}
-
-.part-perfil > p {
-    font-weight: 700;
-    line-height: normal
-}
-
-
-.part-resumo {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 8px;
-    justify-content: space-around;
-    background-color: var(--cor-primaria);
-    width: 16rem;
-
-}
-
-.part-resumo > p {
-    font-size: smaller;
-    text-align: justify;
-    hyphens: auto;
-    line-height: normal;
-}
 
 .ver-todos {
     display: block;

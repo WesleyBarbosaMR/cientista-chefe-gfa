@@ -33,18 +33,19 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 8px;
     justify-content: space-around;
-    background-color: var(--cor-primaria);
-    width: 15rem;
+    /* background-color: var(--cor-primaria); */
 
 }
 
+
+/* colocar o scroll ser visivel sempre / do lado do texto */
 .part-resumo > p {
     font-size: smaller;
     text-align: justify;
     hyphens: auto;
     line-height: normal;
+    height: 100px;
 }
 
 .ver-todos {
@@ -55,3 +56,30 @@
     color: var(--cor-fonte-body);
     font-weight: bold;
 }
+
+.membros > .card {
+    width: 360px;
+    height: 30rem;
+
+}
+
+
+.card > div > img {
+    width: 10rem;
+    height: 11rem;
+    object-fit: cover;
+
+}
+
+.card > a {
+    margin-bottom: 1rem;
+}
+
+
+
+
+.card > h6 {
+    margin-bottom: 0.5rem;
+    font-size: small;
+}
+
