@@ -5,7 +5,7 @@ let participantes = [
     resumo:
       "Graduada em Agronomia pela Universidade Federal de Viçosa, Mestra em Política Pública e Meio Ambiente pela UnB e Doutora em Educação pela USP. É professora Adjunta II da UFC; Membro da Comissão de Direitos Humanos/UFC; Representante dos docentes do Nordeste na Coordenação Pedagógica Nacional do PRONERA (INCRA/MDA); Coordenadora do Curso de Economia Ecológica da UFC e da EmpresaJúnior Eco-Lógica/UFC; Professora colaboradora do Programa de Desenvolvimento e Meio Ambiente - PRODEMA/UFC.",
     Lattes: "http://lattes.cnpq.br/2359052636977383",
-    img: "../assets/img/placeholders/Ines_esco.png",
+    img: "assets/img/placeholders/Ines_esco.png",
     funcao: "Coordenadora Geral da Pesquisa",
   },
   {
@@ -14,7 +14,7 @@ let participantes = [
     resumo:
       "Doutora em Educação pela UFC; Mestra em Políticas Públicas e Sociedade pela Uece; Graduada em Serviço Social pela Uece, em Pedagogia e em Gerontologia.",
     Lattes: "http://lattes.cnpq.br/5768872699906558",
-    img: "../assets/img/placeholders/kelly.gif",
+    img: "assets/img/placeholders/kelly.gif",
     funcao: "Coordenadora dos painéis de Especialistas e análises qualitativas",
   },
   {
@@ -23,7 +23,7 @@ let participantes = [
     resumo:
       "Doutora e Mestra em Administração e Controladoria pela UFC, Especialista Gestão Pública pela UECE.",
     Lattes: "http://lattes.cnpq.br/3073541276192824",
-    img: "../assets/img/placeholders/nazare.gif",
+    img: "assets/img/placeholders/nazare.gif",
     funcao: "Coordenadora de análises quantitativas",
   },
   {
@@ -31,7 +31,7 @@ let participantes = [
     nome: "Profa. Christine Farias Coelho",
     resumo: "Cientista Ambiental pela UFPE, Mestra em Desenvolvimento e Meio Ambiente pela UFC e Doutora em Engª Agrícola pela UFC.",
     Lattes: "http://lattes.cnpq.br/1472233199190560",
-    img: "../assets/img/placeholders/christine.gif",
+    img: "assets/img/placeholders/christine.gif",
     funcao: "Coordenação de campo e de interface de plataformas de dados",
   },
   {
@@ -139,7 +139,7 @@ function colocarParticipantes(participantes, parent) {
       <h5 class="fw-bold">${p.atuacao}</h5>
       <h6 class="fw-light">${p.funcao}</h6>
       <div class="pb-3 d-flex justify-content-center">
-        <img class=" card" src="${p.img || "../assets/img/placeholders/placeholder_face.jpg"}" alt="foto de ${p.nome}" />
+        <img class=" card" src="${p.img || "assets/img/placeholders/placeholder_face.jpg"}" alt="foto de ${p.nome}" />
       </div>
       <span class='h5 fw-bold' >${p.nome}</span>
       <a class="link-body-emphasis" href="${p.Lattes}">Lattes</a>
