@@ -1,0 +1,23 @@
+.cinzel-bold {
+    font-family: "Cinzel", serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4em;
+    text-wrap: balance;
+    line-height: 1em;
+}
+
+
+
+.quicksand-light {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    top: 0.25em
+}
+
+
+
+
