@@ -99,7 +99,7 @@ let participantes = [
     funcao: "Pesquisador",
   },
   {
-    atuacao: "Bolsista Voluntário",
+    atuacao: "Bolsista",
     nome: "André Domingues",
     resumo: "",
     Lattes: "",
@@ -107,7 +107,7 @@ let participantes = [
     funcao: "Auxilio na elaboração geral de softwares",
   },
   {
-    atuacao: "Bolsista",
+    atuacao: "Bolsista Voluntário",
     nome: "Wesley Barbosa",
     resumo: "",
     Lattes: "",

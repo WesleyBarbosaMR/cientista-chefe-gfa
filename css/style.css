@@ -48,8 +48,8 @@ body {
 
 main {
     /* padding: 20px; */
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     gap: 40px;
 }
 
@@ -162,10 +162,6 @@ details {
 
 .banner {
     background-color: #7F6A0D;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     height: 350px;
     color: #f4f4f4;
 }
