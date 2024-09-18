@@ -8,8 +8,18 @@
 
 .resumo > p {
     height: 210px;
+    margin-bottom: 0rem;
 }
+
 
 ::-webkit-scrollbar-track {
     border-radius: 10px;
 }
+
+
+.swiper {
+    height: 525px;
+}
+.swiper-slide { 
+    width: 30%;
+} 

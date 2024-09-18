@@ -36,7 +36,7 @@ let participantes = [
   },
   {
     atuacao: "Especialista",
-    nome: "Prof. Wellington Wagner Ferreira Sarmento",
+    nome: "Prof. Wellington  Sarmento",
     resumo: "",
     Lattes: "http://lattes.cnpq.br/1015561507843037",
     img: "",
@@ -124,11 +124,11 @@ let participantes = [
   },
 ];
 
-let membros = document.querySelector(".membros");
+// let membros = document.querySelector(".membros");
 let membros1 = document.querySelector(".swiper-wrapper");
 
-colocarParticipantes(participantes, membros);
-await colocarParticipantes2(participantes, membros1);
+// colocarParticipantes(participantes, membros);
+colocarParticipantes2(participantes, membros1);
 
 function colocarParticipantes(participantes, parent) {
   participantes.forEach((p) => {
@@ -138,13 +138,13 @@ function colocarParticipantes(participantes, parent) {
 
     card.innerHTML = `
     
-      <h5 class="fw-bold">${p.atuacao}</h5>
-      <h6 class="fw-light">${p.funcao}</h6>
+      <h5 class="fw-bold">${p.atuacao || "PlaceHolder"}</h5>
+      <h6 class="fw-light">${p.funcao || "PlaceHolder"}</h6>
       <div class="pb-3 d-flex justify-content-center">
         <img class=" card" src="${p.img || "assets/img/placeholders/placeholder_face.jpg"}" alt="foto de ${p.nome}" />
       </div>
-      <span class='h5 fw-bold' >${p.nome}</span>
-      <a class="link-body-emphasis" href="${p.Lattes}">Lattes</a>
+      <span class='h5 fw-bold' >${p.nome || "PlaceHolder"}</span>
+      <a class="link-body-emphasis" href="${p.Lattes || "PlaceHolder"}">Lattes</a>
       <span class="fw-bold">Resumo</span>
       <div class="part-resumo">
         <p data-bs-spy="scroll" class="overflow-y-scroll ">
@@ -155,12 +155,13 @@ function colocarParticipantes(participantes, parent) {
       </div>
     
     `;
-
+        console.log();
+        
     parent.appendChild(card);
   });
 }
 
-async function colocarParticipantes2(participantes, parent) {
+function colocarParticipantes2(participantes, parent) {
   participantes.forEach((p) => {
     let card = document.createElement("div");
     card.classList.add("swiper-slide");
@@ -170,14 +171,14 @@ async function colocarParticipantes2(participantes, parent) {
 
     card.innerHTML = `
     <div class='card p-3'>
-      <h5 class="fw-bold">${p.atuacao}</h5>
-      <h6 class="fw-light">${p.funcao}</h6>
+      <h5 class="fw-bold">${p.atuacao || "PlaceHolder"}</h5>
+      <h6 class="fw-light">${p.funcao || "PlaceHolder"}</h6>
       <div class="pb-3 d-flex justify-content-center">
         <img class=" card" src="${
           p.img || "assets/img/placeholders/placeholder_face.jpg"
-        }" alt="foto de ${p.nome}" />
+        }" alt="foto de ${p.nome || "PlaceHolder"}" />
       </div>
-      <span class='h5 fw-bold' >${p.nome}</span>
+      <span class='h5 fw-bold' >${p.nome || "PlaceHolder"}</span>
       <a class="link-body-emphasis" href="${p.Lattes}">Lattes</a>
       <span class="fw-bold">Resumo</span>
       <div class="part-resumo">
