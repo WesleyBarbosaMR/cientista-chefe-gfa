@@ -15,7 +15,7 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
+  slidesPerView: "auto",
   // And if we need scrollbar
   // scrollbar: {
   //   el: ".swiper-scrollbar",
@@ -25,13 +25,13 @@ const swiper = new Swiper(".swiper", {
 
   breakpoints: {
     0 : {
-      slidesPerView: 1
+      slidesPerView: 1.12
     },
     768 : {
       slidesPerView: 2
     },
     1024 : {
-      slidesPerView: 3
+      slidesPerView: 3.5
     }
   }
   
