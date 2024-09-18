@@ -56,28 +56,22 @@
     />
 
     <link rel="stylesheet" href="css/bootstrap_overwritten.css" />
+    <link rel="stylesheet" href="/css/index.css" />
   </head>
 
   <body>
-    <header class="header">
-      
-    </header>
+    <header class="header"></header>
 
     <main>
       <!-- Banner do Projeto -->
-      <div class="banner">
-        <h1 class="container">Governança Fundiária e Ambiental do Ceará</h1>
-      </div>
-      <!-- seção de Sobre o Projeto -->
-      <div class="sobre container">
-        <h2>Resumo</h2>
-        <ul>
-          <details open>
-            <summary>Resumo</summary>
-            <p>
+      <div class="banner mb-4">
+        <div class="bannerContent container d-flex">
+          <div class="resumo col-5 m-5">
+            <h1>Projeto (Resumo)</h1>
+            <p class="overflow-y-scroll h-25" style="hyphens: auto;">
               Esta proposta se desenvolve a partir de uma parceria entre o
               Instituto de Desenvolvimento Agrário - IDACE e um conjunto de
-              docentes/pesquisadores das Instituições de Ensino Superior - IES
+              docentes/ pesquisadores das Instituições de Ensino Superior - IES
               do Ceará e seus programas de pós-graduação. O objetivo geral deste
               projeto é apoiar a Política Estadual de Regularização Fundiária
               Rural. O tema da governança da terra está diretamente associado ao
@@ -104,10 +98,18 @@
               ferramentas instrumentais para garantia de direitos, especialmente
               de comunidades tradicionais.
             </p>
-          </details>
-        </ul>
-        <a href="pages/sobre.html" class="ver-todos">Saiba Mais</a>
+
+            <!-- Colocar Vinculo Cientista Chefe e Funcap -->
+          </div>
+          <img
+            class="col-7"
+            src="/assets/img/placeholders/placeholder_img_bg.png"
+            alt=""
+          />
+        </div>
       </div>
+      <!-- seção de Sobre o Projeto -->
+      <div class="sobre container">
 
       <!-- Seção de Produtos -->
       <div
