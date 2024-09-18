@@ -17,9 +17,10 @@
     <!-- Adiciona o CSS do Swiper -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -65,10 +66,12 @@
     <main>
       <!-- Banner do Projeto -->
       <div class="banner mb-4">
-        <div class="bannerContent container d-flex flex-column flex-md-row flex-column-reverse">
+        <div
+          class="bannerContent container d-flex flex-column flex-md-row flex-column-reverse"
+        >
           <div class="resumo col-md-5 m-5">
             <h1>Projeto (Resumo)</h1>
-            <p class="overflow-y-scroll" style="hyphens: auto;">
+            <p class="overflow-y-scroll" style="hyphens: auto">
               Esta proposta se desenvolve a partir de uma parceria entre o
               Instituto de Desenvolvimento Agrário - IDACE e um conjunto de
               docentes/ pesquisadores das Instituições de Ensino Superior - IES
@@ -110,76 +113,95 @@
       </div>
       <!-- seção de Sobre o Projeto -->
       <div class="sobre container">
+        <!-- Seção de Produtos -->
+        <div
+          class="produtos container flex flex-wrap justify-content-around mb-5"
+        >
+          <section class="produtos">
+            <h2>Produtos</h2>
+            <div class="produtos-grid">
+              <div class="produto p-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="64px"
+                  viewBox="0 -960 960 960"
+                  width="64px"
+                  fill="#000000"
+                >
+                  <path
+                    d="M796-121 533-384q-30 26-69.96 40.5Q423.08-329 378-329q-108.16 0-183.08-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.13-57.5Q572-504 572-585t-56.87-138.5Q458.25-781 377-781q-82.08 0-139.54 57.5Q180-666 180-585t57.46 138.5Q294.92-389 377-389Z"
+                  />
+                </svg>
+                <p>
+                  Realização de estudo comparativo sobre Governança Fundiária
+                  versus Desmatamento e a Proteção de Serviços Ecossistêmicos
+                  correlacionando ao contexto econômico ecológico do Ceará e com
+                  experiências mais antigas em outros estados.
+                </p>
+              </div>
+              <div class="produto p-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="64px"
+                  viewBox="0 -960 960 960"
+                  width="64px"
+                  fill="#000000"
+                >
+                  <path
+                    d="M180-180h44l472-471-44-44-472 471v44Zm-60 60v-128l575-574q8-8 19-12.5t23-4.5q11 0 22 4.5t20 12.5l44 44q9 9 13 20t4 22q0 11-4.5 22.5T823-694L248-120H120Zm659-617-41-41 41 41Zm-105 64-22-22 44 44-22-22Z"
+                  />
+                </svg>
 
-      <!-- Seção de Produtos -->
-      <div
-        class="produtos container flex flex-wrap justify-content-around mb-5"
-      >
-        <section class="produtos">
-          <h2>Produtos</h2>
-          <div class="produtos-grid">
-            <div class="produto p-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="64px"
-                viewBox="0 -960 960 960"
-                width="64px"
-                fill="#000000"
-              >
-                <path
-                  d="M796-121 533-384q-30 26-69.96 40.5Q423.08-329 378-329q-108.16 0-183.08-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.13-57.5Q572-504 572-585t-56.87-138.5Q458.25-781 377-781q-82.08 0-139.54 57.5Q180-666 180-585t57.46 138.5Q294.92-389 377-389Z"
-                />
-              </svg>
-              <p>
-                Realização de estudo comparativo sobre Governança Fundiária
-                versus Desmatamento e a Proteção de Serviços Ecossistêmicos
-                correlacionando ao contexto econômico ecológico do Ceará e com
-                experiências mais antigas em outros estados.
-              </p>
-            </div>
-            <div class="produto p-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="64px"
-                viewBox="0 -960 960 960"
-                width="64px"
-                fill="#000000"
-              >
-                <path
-                  d="M180-180h44l472-471-44-44-472 471v44Zm-60 60v-128l575-574q8-8 19-12.5t23-4.5q11 0 22 4.5t20 12.5l44 44q9 9 13 20t4 22q0 11-4.5 22.5T823-694L248-120H120Zm659-617-41-41 41 41Zm-105 64-22-22 44 44-22-22Z"
-                />
-              </svg>
+                <p>
+                  Elaboração de Estudo de Caso no âmbito dos Assentamentos
+                  Estaduais sobre as estratégias de reprodução social adotadas
+                  por agricultores, escolhendo dois assentamentos com aparente
+                  processo de descaracterização
+                </p>
+              </div>
+              <div class="produto p-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="64px"
+                  viewBox="0 -960 960 960"
+                  width="64px"
+                  fill="#000000"
+                >
+                  <path
+                    d="M320-242 80-482l242-242 43 43-199 199 197 197-43 43Zm318 2-43-43 199-199-197-197 43-43 240 240-242 242Z"
+                  />
+                </svg>
 
-              <p>
-                Elaboração de Estudo de Caso no âmbito dos Assentamentos
-                Estaduais sobre as estratégias de reprodução social adotadas por
-                agricultores, escolhendo dois assentamentos com aparente
-                processo de descaracterização
-              </p>
+                <p>
+                  Apresentação de plano de disponibilização da base de dados
+                  fundiários do Ceará, incluindo o projeto de software com
+                  formato simplificado e interativo
+                  <a href="#">Link para repositório</a>
+                </p>
+              </div>
             </div>
-            <div class="produto p-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="64px"
-                viewBox="0 -960 960 960"
-                width="64px"
-                fill="#000000"
-              >
-                <path
-                  d="M320-242 80-482l242-242 43 43-199 199 197 197-43 43Zm318 2-43-43 199-199-197-197 43-43 240 240-242 242Z"
-                />
-              </svg>
-
-              <p>
-                Apresentação de plano de disponibilização da base de dados
-                fundiários do Ceará, incluindo o projeto de software com formato
-                simplificado e interativo
-                <a href="#">Link para repositório</a>
-              </p>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
+
+      <div class="swiper container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          
+          
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
       <div class="participantes container">
         <h2>Coordenadoras</h2>
         <div class="m-auto">
@@ -241,6 +263,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Adiciona o JS principal -->
     <script src="js/main.js"></script>

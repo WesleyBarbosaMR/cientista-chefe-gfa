@@ -1,4 +1,4 @@
-console.log("3")
+console.log("3");
 
 const swiper = new Swiper(".swiper", {
   // Optional parameters
@@ -20,4 +20,7 @@ const swiper = new Swiper(".swiper", {
   scrollbar: {
     el: ".swiper-scrollbar",
   },
+  spaceBetween: 30,
+  slidesPerView: 3,
+  
 });

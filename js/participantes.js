@@ -125,8 +125,10 @@ let participantes = [
 ];
 
 let membros = document.querySelector(".membros");
+let membros1 = document.querySelector(".swiper-wrapper");
 
 colocarParticipantes(participantes, membros);
+await colocarParticipantes2(participantes, membros1);
 
 function colocarParticipantes(participantes, parent) {
   participantes.forEach((p) => {
@@ -150,6 +152,42 @@ function colocarParticipantes(participantes, parent) {
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam facere molestias vero? Molestiae sed amet similique explicabo incidunt ullam, recusandae nulla dolore asperiores beatae. Veniam at fugit placeat deleniti minus."
         }
         </p>
+      </div>
+    
+    `;
+
+    parent.appendChild(card);
+  });
+}
+
+async function colocarParticipantes2(participantes, parent) {
+  participantes.forEach((p) => {
+    let card = document.createElement("div");
+    card.classList.add("swiper-slide");
+    // card.classList.add("card");
+    // card.classList.add("p-3");
+    // card.classList.add("col-3");
+
+    card.innerHTML = `
+    <div class='card p-3'>
+      <h5 class="fw-bold">${p.atuacao}</h5>
+      <h6 class="fw-light">${p.funcao}</h6>
+      <div class="pb-3 d-flex justify-content-center">
+        <img class=" card" src="${
+          p.img || "assets/img/placeholders/placeholder_face.jpg"
+        }" alt="foto de ${p.nome}" />
+      </div>
+      <span class='h5 fw-bold' >${p.nome}</span>
+      <a class="link-body-emphasis" href="${p.Lattes}">Lattes</a>
+      <span class="fw-bold">Resumo</span>
+      <div class="part-resumo">
+        <p data-bs-spy="scroll" class="overflow-y-scroll ">
+        ${
+          p.resumo ||
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam facere molestias vero? Molestiae sed amet similique explicabo incidunt ullam, recusandae nulla dolore asperiores beatae. Veniam at fugit placeat deleniti minus."
+        }
+        </p>
+      </div>
       </div>
     
     `;
