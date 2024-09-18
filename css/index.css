@@ -5,3 +5,11 @@
 
 
 }
+
+.resumo > p {
+    height: 210px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
