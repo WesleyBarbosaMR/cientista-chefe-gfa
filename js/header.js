@@ -22,9 +22,9 @@ header.innerHTML = `
     </button>
     <div class="collapse navbar-collapse col-lg-5" id="navbarNav">
         <div class="container navbar-nav flex-grow-1 justify-content-end">
-        <a class="btn" href="/index.html">Home</a>
+        <a class="btn" href="index.html">Home</a>
 
-        <a class="btn" href="/pages/sobre.html">Sobre o Projeto</a>
+        <a class="btn" href="pages/sobre.html">Sobre o Projeto</a>
 
         <a class="btn" href="#rodape-contato">Contato</a>
         </div>
